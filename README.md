@@ -36,11 +36,11 @@ A team project using OpenF1 data to build a reproducible racing-data pipeline. M
 ### [Object Detection Under Distribution Shift](https://github.com/raghavchhabra123/object-detection-generalization)
 **Computer vision · Experimental analysis · Generalization**
 
-A comparison of YOLOv8 models on traffic imagery and synthetic examples, examining how performance changes outside the original test distribution.
+A five-person team project comparing YOLOv8 models on traffic imagery and synthetic examples, examining how performance changes outside the original test distribution.
 
 - YOLOv8m's reported mAP@50 falls from **0.860 on the test set to 0.153 on synthetic data**.
 - Demonstrates why a strong in-distribution score is not enough to establish robustness.
-- Results and example predictions are documented in the repository.
+- Metrics are in the repository; example predictions are in the team's project report.
 
 **Tools:** Python, YOLOv8  
 [Experiments & results](https://github.com/raghavchhabra123/object-detection-generalization)
