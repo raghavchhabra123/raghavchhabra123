@@ -14,9 +14,9 @@ My experience includes data quality and automation at Roche, language-model work
 
 An interactive Streamlit dashboard that breaks a matchup into team strength, home court, rest, and player-availability scenarios. The point-spread engine converts an expected scoring margin into a win probability.
 
-- **Recorded holdout:** 68.2% accuracy across 2,462 games; log loss 0.6044 and Brier score 0.2086.
+- **Reproduced chronological evaluation:** 67.79% accuracy across 2,462 games; log loss 0.6035 and Brier score 0.2082. Elo alone scores 67.83% accuracy; the difference is within the paired uncertainty interval.
 - Results apply to the historical Elo + home-court + rest engine, **not** the live app's projected-roster, player-availability, or travel adjustments.
-- The repository includes evaluation scripts, saved metrics, and limitations—not just a headline score.
+- The audited pipeline adds training-only preprocessing, rolling development folds, per-game predictions, leakage regression tests and automated evaluation checks. The evaluation seasons have already been inspected, so these are retrospective results rather than an untouched final test.
 
 **Tools:** Python, pandas, NumPy, Streamlit  
 [Live demo](https://nba-matchup-predictor.streamlit.app/) · [Code & methodology](https://github.com/raghavchhabra123/nba-matchup-predictor) · [Saved evaluation](https://github.com/raghavchhabra123/nba-matchup-predictor/blob/main/models/metrics_tier1.json)
