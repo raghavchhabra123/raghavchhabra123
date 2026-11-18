@@ -33,6 +33,18 @@ A chatbot for the 2025 WNBA season that answers questions the way fans actually 
 **Tools:** Python, LangGraph, OpenAI API, FAISS, pandas, Docker  
 [Live demo](https://wnba-agentic-rag.streamlit.app/) · [Code & evaluation](https://github.com/raghavchhabra123/wnba-agentic-rag)
 
+### [Amazon Recommender Audit](https://github.com/raghavchhabra123/amazon-segmented-recsys)
+**Recommender systems · Evaluation · Data leakage**
+
+A five-person Data Mining project tested whether training a separate recommender for each K-means customer segment beats one model for everyone, using Amazon reviews (7.6k users, 1.3k products). After the course, I audited and rebuilt it.
+
+- **Found the headline result was leakage:** segment features were built using test ratings. With that fixed, segmentation made rating error worse for every model.
+- **Replaced a broken metric:** the original Precision/Recall@10 gave the same score to a perfect model, a random one, and a constant.
+- **Fair comparison:** under a time-based holdout that ranks the full catalog, a ranking-trained model (BPR-MF) beat recommending the most popular products, NDCG@10 0.229 vs. 0.160.
+
+**Tools:** Python, pandas, NumPy, scikit-learn, PyTorch  
+[Code, audit & results](https://github.com/raghavchhabra123/amazon-segmented-recsys) · Group code kept in `original/` with the team credited.
+
 ### [Formula 1 Data Pipeline](https://github.com/1haochen/mlds_f1_project)
 **Data engineering · Workflow orchestration · Analytics-ready data**
 
