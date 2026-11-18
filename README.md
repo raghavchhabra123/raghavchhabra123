@@ -21,6 +21,18 @@ An interactive Streamlit dashboard that breaks a matchup into team strength, hom
 **Tools:** Python, pandas, NumPy, Streamlit  
 [Live demo](https://nba-matchup-predictor.streamlit.app/) · [Code & methodology](https://github.com/raghavchhabra123/nba-matchup-predictor) · [Saved evaluation](https://github.com/raghavchhabra123/nba-matchup-predictor/blob/main/models/metrics_tier1.json)
 
+### [WNBA Agentic RAG](https://github.com/raghavchhabra123/wnba-agentic-rag)
+**LLM agents · Retrieval · Evaluation**
+
+A chatbot for the 2025 WNBA season that answers questions the way fans actually ask them. It figures out which game or season a question is about, sends stat questions to exact pandas calculations, and sends "what happened" questions to a search over that one game's play-by-play.
+
+- **Held-out test:** 96% of 140 fan-style questions answered correctly, vs. 19% for standard RAG and 6% for the model alone.
+- Stat tools are checked against official box scores for all 5,916 player-games (99.8–100% match per stat).
+- Descriptive answers are the weak spot: 84% of claims are supported by the game data, 15% contradict it. The README lists this and other known failure modes.
+
+**Tools:** Python, LangGraph, OpenAI API, FAISS, pandas, Docker  
+[Live demo](https://wnba-agentic-rag.streamlit.app/) · [Code & evaluation](https://github.com/raghavchhabra123/wnba-agentic-rag)
+
 ### [Formula 1 Data Pipeline](https://github.com/1haochen/mlds_f1_project)
 **Data engineering · Workflow orchestration · Analytics-ready data**
 
@@ -60,6 +72,7 @@ An expense-management platform shaped by research into seven procurement tools a
 ## Technical toolkit
 
 **Analysis & modeling:** Python, SQL, statistics, machine learning, pandas, NumPy  
+**AI & LLMs:** LangGraph, retrieval-augmented generation (RAG), LLM evaluation  
 **Data & infrastructure:** Snowflake, PySpark, Airflow, Docker, AWS, GCP  
 **Communication:** Tableau, Power BI, stakeholder reporting, product research
 
